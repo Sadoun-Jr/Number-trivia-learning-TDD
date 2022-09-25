@@ -9,6 +9,7 @@ class UpdatePostUseCase{
   UpdatePostUseCase(this.repository);
 
   Future<Either<Failure, Unit>> call(Post post) async{
+    //return Post object
     return await repository.updatePost(post);
   }
 
